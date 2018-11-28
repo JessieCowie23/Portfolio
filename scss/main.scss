@@ -45,6 +45,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 1.2rem;
+}
+
 header {
     position: fixed;
     z-index: 2;
@@ -91,11 +95,54 @@ main {
     grid-template-columns: repeat(3, 1fr);
 
 
+
+    .progressbar {
+        background-color: black;
+        border-radius: 13px;
+        padding: 3px;
+        margin-bottom: 20px;
+
+        #skill1 {
+            width: 83%;
+        }
+
+        #skill2 {
+            width: 93%;
+        }
+
+        #skill3 {
+            width: 70%;
+        }
+
+        #skill4 {
+            width: 60%;
+        }
+
+        #skill5 {
+            width: 40%;
+        }
+
+        #skill6 {
+            width: 100%;
+        }
+    }
+
+    .progressbar>div {
+        background-color: $secondary-color;
+        height: 20px;
+        border-radius: 10px;
+
+        color: set-text-color($secondary-color);
+        text-align: left;
+        padding-left: 20%;
+
+    }
+
     .bio-img {
         grid-area: bioimage;
         margin: auto;
         border-radius: 50%;
-        border: $secondary-color 3px solid;
+        border: $secondary-color 4px solid;
     }
 
     .bio {
