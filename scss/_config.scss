@@ -3,6 +3,7 @@ $secondary-color: #f6fa00;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
+$view-width: vw;
 
 @mixin easeOut {
     transition: all 0.5s ease-out;
@@ -39,6 +40,16 @@ $background-opacity: 0.9;
     }
 }
 
+// @function set-menu-toggle-loaction($vw) {
+//     @if(vw <=1500) {
+//         @return 35px;
+//     }
+
+//     @else {
+//         @return calc(100vw - 1770px);
+//     }
+// }
+
 
 
 // Media Query Mixins
@@ -62,6 +73,12 @@ $background-opacity: 0.9;
 
 @mixin mediaXl {
     @media screen and (min-width: 1171px) {
+        @content;
+    }
+}
+
+@mixin max-vw {
+    @media screen and (min-width: 1800px) {
         @content;
     }
 }

@@ -96,3 +96,10 @@
         grid-template-columns: 1fr;
     }
 }
+
+@include max-vw {
+    .menu-btn {
+        right: calc(100vw - 1765px);
+
+    }
+}

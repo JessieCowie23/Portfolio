@@ -1,9 +1,10 @@
 @import 'config';
 
+
 .menu-btn {
     position: absolute;
     z-index: 3;
-    right: 35px;
+    right: 30px;
     top: 35px;
     cursor: pointer;
     @include easeOut;
@@ -55,6 +56,8 @@
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 1800px;
+
 
     visibility: hidden;
 
@@ -111,7 +114,7 @@
 .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(darken($primary-color, 5), 0.9);
+    background: rgba(darken($primary-color, 20), 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -124,7 +127,7 @@
 
 .menu-branding {
 
-    background: rgba(($primary-color), 0.9);
+    background: rgba(darken($primary-color, 10), 0.9);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
