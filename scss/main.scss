@@ -141,6 +141,7 @@ main {
     .bio-img {
         grid-area: bioimage;
         margin: auto;
+        margin-bottom: 10%;
         border-radius: 50%;
         border: $secondary-color 4px solid;
     }
@@ -190,40 +191,112 @@ main {
 }
 
 //Contact Page
+#contact {
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1rem;
 
-.boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
+        a {
+            width: 100%;
+        }
+
+        div {
+            font-size: 2rem;
+            border: 3px #fff solid;
+            padding: 1.5rem 2.5rem;
+            margin-bottom: 3rem;
+            border-radius: 20px;
+
+            width: 100%;
+            @include easeOut;
 
 
+            &:hover {
+                padding: 1.4rem 2.4rem;
+                background: $secondary-color;
+                color: set-text-color($secondary-color);
 
-    div {
-        font-size: 2rem;
-        border: 3px #fff solid;
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem;
-        border-radius: 20px;
-        min-width: 600px;
-        @include easeOut;
-
-
-        &:hover {
-            padding: 1.4rem 2.4rem;
-            background: $secondary-color;
-
-            color: set-text-color($secondary-color);
-
-            span {
-                color: set-text-color($secondary-color)
+                span {
+                    color: set-text-color($secondary-color)
+                }
             }
         }
     }
+
+    .form-container {
+
+        width: 100%;
+        margin: 0 auto;
+        padding: 1em;
+        background: rgba(lighten($color: $primary-color, $amount: 5), 0.5);
+        border: 3px #fff solid;
+        border-radius: 20px;
+    }
+
+    form label {
+        display: block;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+        div {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+
+
+    .contact-content-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+
+
+
+    textarea,
+    button,
+    input {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 20px;
+
+
+    }
+
+    textarea,
+    input,
+        {
+        &:focus {
+            background: lighten($secondary-color, 40);
+        }
+    }
+
+    button {
+        background: darken($primary-color, 10);
+        border: 3px #fff solid;
+        border-radius: 20px;
+        color: set-text-color($primary-color);
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            @include easeOut;
+        }
+    }
+
 }
-
-
 
 // Button Styles
 
