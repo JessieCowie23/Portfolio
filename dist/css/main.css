@@ -325,6 +325,11 @@ main {
   background: #4d4d4d;
   color: #fff;
   height: 60px; }
+  #main-footer .icons a {
+    padding: 0.4rem; }
+    #main-footer .icons a:hover {
+      color: #f6fa00;
+      transition: all 0.5s ease-out; }
 
 @media screen and (min-width: 1171px) {
   .projects {

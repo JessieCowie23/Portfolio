@@ -336,6 +336,17 @@ main {
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     height: 60px;
+
+    .icons {
+        a {
+            padding: 0.4rem;
+
+            &:hover {
+                color: $secondary-color;
+                @include easeOut
+            }
+        }
+    }
 }
 
 
