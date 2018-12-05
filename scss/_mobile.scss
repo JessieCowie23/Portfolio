@@ -29,11 +29,21 @@
 
 
 
+
+
 }
 
 // Tablets & Small Laptops
 
 @include mediaMd {
+    #contact {
+        .boxes {
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+
     main {
         align-items: center;
         text-align: center;
@@ -96,6 +106,7 @@
 // Smartphones
 
 @include mediaSm {
+
 
 
     main {
